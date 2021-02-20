@@ -9,12 +9,14 @@ public enum LogType {
 
     INSERT("新增", Constants.INERT_VALUE),
     UPDATE("更新", Constants.UPDATE_VALUE),
-    DELETE("删除", Constants.DELETE_VALUE);
+    DELETE("删除", Constants.DELETE_VALUE),
+    QUERY("查询", Constants.QUERY_VALUE);
 
     public static class Constants {
         public static final String INERT_VALUE = "insert";
         public static final String UPDATE_VALUE = "update";
         public static final String DELETE_VALUE = "delete";
+        public static final String QUERY_VALUE = "QUERY";
     }
 
     private String value;
